@@ -111,7 +111,7 @@ struct LearnPage: View {
                 ForEach(vm.learnArr.indices, id: \.self){row in
                     Button {
                         vm.learnArr[row].passed = true
-                        vm.updateLvl(lvl: vm.learnArr[row].lvl)
+                        vm.updateLvl(lvl: vm.learnArr[row].lvl + 1)
                         currentLesson = row
                         showDetail = true
                     } label: {

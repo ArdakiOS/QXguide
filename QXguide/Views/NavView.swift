@@ -21,7 +21,7 @@ struct NavView: View {
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
 
     var body: some View {
-        if !showOnboarding{
+        if showOnboarding{
             AllOnboardingViews(showOnboarding: $showOnboarding)
         }
         else{

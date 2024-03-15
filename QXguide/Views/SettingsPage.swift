@@ -15,7 +15,7 @@ struct SettingsPage: View {
                 .fontWeight(.bold)
             
             Button {
-                //
+                UIApplication.shared.open(URL(string: "https://www.freeprivacypolicy.com/live/3f8bc22e-d1e6-4e7c-9bcf-dc0bedc407bb")!)
             } label: {
                 HStack{
                     Image("priv")
@@ -36,7 +36,7 @@ struct SettingsPage: View {
             }
             
             Button {
-                //
+                UIApplication.shared.open(URL(string: "https://forms.gle/BK2Nppc4zjTGXyRx8")!)
             } label: {
                 HStack{
                     Image("sup")

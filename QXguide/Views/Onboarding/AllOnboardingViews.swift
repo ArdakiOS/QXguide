@@ -39,6 +39,10 @@ struct AllOnboardingViews: View {
                     .transition(.move(edge: .trailing))
             }
         }
-        .animation(.bouncy(duration: 0.7), value: currentTab)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(
+            LinearGradient(colors: [Color(red: 88/255, green: 121/255, blue: 236/255), Color(red: 22/255, green: 24/255, blue: 30/255)], startPoint: .top, endPoint: .bottom).ignoresSafeArea()
+        )
+        .animation(.linear(duration: 0.3), value: currentTab)
     }
 }
