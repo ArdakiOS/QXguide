@@ -10,6 +10,7 @@ import AppTrackingTransparency
 
 struct OnBoarding1: View {
     @Binding var currentPage : myTabs
+    let att = ATTObserver()
     var body: some View {
         VStack(spacing: 0){
             Text("Welcome!")
@@ -42,20 +43,7 @@ struct OnBoarding1: View {
             
             
             Button(action: {
-                ATTrackingManager.requestTrackingAuthorization { status in
-                    switch status {
-                    case .notDetermined:
-                        print("ND")
-                    case .restricted:
-                        print("Restricted")
-                    case .denied:
-                        print("Denied")
-                    case .authorized:
-                        print("Authorized")
-                    @unknown default:
-                        print("Unknown")
-                    }
-                    
+                att.requestTrackingAuthorization {
                     currentPage = .two
                 }
             }, label: {
@@ -65,7 +53,7 @@ struct OnBoarding1: View {
                     .frame(maxWidth: 343, maxHeight: 53)
                     .background{
                         RoundedRectangle(cornerRadius: 10)
-                            .fill(Color.init(red: 88/255, green: 121/255, blue: 236/255))
+                            .fill(Color.init(red: 0/255, green: 211/255, blue: 126/255))
                     }
             })
             .padding(.bottom, 40)
@@ -73,10 +61,11 @@ struct OnBoarding1: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(
-            LinearGradient(colors: [Color(red: 88/255, green: 121/255, blue: 236/255), Color(red: 22/255, green: 24/255, blue: 30/255)], startPoint: .top, endPoint: .bottom)
+            LinearGradient(colors: [Color(red: 0/255, green: 211/255, blue: 126/255), Color(red: 22/255, green: 24/255, blue: 30/255)], startPoint: .top, endPoint: .bottom).ignoresSafeArea()
         )
         .foregroundColor(.white)
         
         
     }
 }
+

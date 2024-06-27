@@ -9,8 +9,10 @@ import SwiftUI
 
 enum NavTabs : String, CaseIterable {
     case home = "Main"
+    case study = "Learn"
     case signals = "Signals"
     case settings = "Settings"
+    
 }
 
 struct NavView: View {
@@ -26,15 +28,19 @@ struct NavView: View {
         }
         else{
             ZStack{
-                Color("MainBg").ignoresSafeArea()
+                Color(red: 22/255, green: 26/255, blue: 33/255).ignoresSafeArea()
                 VStack{
                     switch currentPage {
                     case .home:
                         HomePage()
+                    case .study:
+                        StudyPage()
                     case .signals:
                         SignalsPage(sigVM: sigVM)
                             .onAppear{
-                                sigVM.addSignal()
+                                if sigVM.signals.isEmpty{
+                                    sigVM.addSignal()
+                                }
                             }
                     case .settings:
                         SettingsPage()
@@ -43,14 +49,7 @@ struct NavView: View {
                     NavTabBar(selectedTab: $currentPage)
                 }
             }
-            .onReceive(timer, perform: { _ in
-                for index in (0..<sigVM.signals.count).reversed() {
-                    sigVM.signals[index].remainingTime -= 1
-                    if sigVM.signals[index].remainingTime < 0 {
-                        sigVM.signals.remove(at: index)
-                    }
-                }
-            })
+            
         }
     }
     

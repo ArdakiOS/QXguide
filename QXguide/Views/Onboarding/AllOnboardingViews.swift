@@ -41,8 +41,8 @@ struct AllOnboardingViews: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(
-            LinearGradient(colors: [Color(red: 88/255, green: 121/255, blue: 236/255), Color(red: 22/255, green: 24/255, blue: 30/255)], startPoint: .top, endPoint: .bottom).ignoresSafeArea()
+            LinearGradient(colors: [Color(red: 0/255, green: 211/255, blue: 126/255), Color(red: 22/255, green: 24/255, blue: 30/255)], startPoint: .top, endPoint: .bottom).ignoresSafeArea()
         )
-        .animation(.linear(duration: 0.3), value: currentTab)
+        .animation(.bouncy(duration: 0.3), value: currentTab)
     }
 }

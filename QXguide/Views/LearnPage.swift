@@ -11,7 +11,7 @@ struct LearnPage: View {
     @State var showDetail = false
     @State var currentLesson = 0
     @StateObject var vm = LearnVM()
-    @Binding var curPage : MainPages
+    @Binding var showLearn : Bool
     var body: some View {
         if showDetail{
             VStack(alignment: .center){
@@ -80,7 +80,7 @@ struct LearnPage: View {
                     
                     Button {
                         withAnimation(.easeInOut(duration: 0.3)){
-                            curPage = .main
+                            showLearn = false
                         }
                     } label: {
                         Text("Back")

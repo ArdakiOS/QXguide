@@ -14,8 +14,8 @@ struct NavTabBar: View {
             Color("MainBg").ignoresSafeArea()
             VStack {
                 Divider()
-                    .frame(height: 1)
-                    .background(Color("InactiveTab"))
+                    .frame(height: 0.5)
+                    .background(Color(.white).opacity(0.2))
                 Spacer()
                 GeometryReader { geo in
                     HStack(spacing: 0){
@@ -28,7 +28,7 @@ struct NavTabBar: View {
                                     .font(.system(size: 12))
                                     .fontWeight(.medium)
                             }
-                            .frame(width: geo.size.width / 3)
+                            .frame(width: geo.size.width / 4)
                             .onTapGesture {
                                 withAnimation(.easeInOut(duration: 0.2)){
                                     selectedTab = tab

@@ -10,6 +10,8 @@
 		9842C63B2BA4774A0099837B /* SignalsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9842C63A2BA4774A0099837B /* SignalsVM.swift */; };
 		9842C63D2BA47E5F0099837B /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9842C63C2BA47E5F0099837B /* TimerModel.swift */; };
 		9842C63F2BA486BF0099837B /* SignalRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9842C63E2BA486BF0099837B /* SignalRow.swift */; };
+		985D39082C29C9AF0006B823 /* StudyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985D39072C29C9AF0006B823 /* StudyPage.swift */; };
+		985D390A2C2D5B7B0006B823 /* MyAtt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985D39092C2D5B7B0006B823 /* MyAtt.swift */; };
 		98E02E752B9DCB08003C3355 /* QXguideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E02E742B9DCB08003C3355 /* QXguideApp.swift */; };
 		98E02E772B9DCB08003C3355 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E02E762B9DCB08003C3355 /* WelcomeView.swift */; };
 		98E02E7C2B9DCB0B003C3355 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98E02E7B2B9DCB0B003C3355 /* Preview Assets.xcassets */; };
@@ -25,7 +27,6 @@
 		98E02E992B9DDE2F003C3355 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E02E982B9DDE2F003C3355 /* HomePage.swift */; };
 		98E02E9B2B9DDE39003C3355 /* SignalsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E02E9A2B9DDE39003C3355 /* SignalsPage.swift */; };
 		98E02E9D2B9DDE40003C3355 /* SettingsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E02E9C2B9DDE40003C3355 /* SettingsPage.swift */; };
-		98E02E9F2B9DE431003C3355 /* PairsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E02E9E2B9DE431003C3355 /* PairsPage.swift */; };
 		98E02EA12B9DE43B003C3355 /* LearnPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E02EA02B9DE43B003C3355 /* LearnPage.swift */; };
 		98E02EA32B9DE4E6003C3355 /* PairsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E02EA22B9DE4E6003C3355 /* PairsRow.swift */; };
 		98E02EA62B9DE546003C3355 /* PairsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E02EA52B9DE546003C3355 /* PairsModel.swift */; };
@@ -40,6 +41,8 @@
 		9842C63A2BA4774A0099837B /* SignalsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalsVM.swift; sourceTree = "<group>"; };
 		9842C63C2BA47E5F0099837B /* TimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
 		9842C63E2BA486BF0099837B /* SignalRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalRow.swift; sourceTree = "<group>"; };
+		985D39072C29C9AF0006B823 /* StudyPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyPage.swift; sourceTree = "<group>"; };
+		985D39092C2D5B7B0006B823 /* MyAtt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAtt.swift; sourceTree = "<group>"; };
 		98E02E712B9DCB08003C3355 /* QXguide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QXguide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98E02E742B9DCB08003C3355 /* QXguideApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QXguideApp.swift; sourceTree = "<group>"; };
 		98E02E762B9DCB08003C3355 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
@@ -56,7 +59,6 @@
 		98E02E982B9DDE2F003C3355 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		98E02E9A2B9DDE39003C3355 /* SignalsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalsPage.swift; sourceTree = "<group>"; };
 		98E02E9C2B9DDE40003C3355 /* SettingsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPage.swift; sourceTree = "<group>"; };
-		98E02E9E2B9DE431003C3355 /* PairsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairsPage.swift; sourceTree = "<group>"; };
 		98E02EA02B9DE43B003C3355 /* LearnPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnPage.swift; sourceTree = "<group>"; };
 		98E02EA22B9DE4E6003C3355 /* PairsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairsRow.swift; sourceTree = "<group>"; };
 		98E02EA52B9DE546003C3355 /* PairsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairsModel.swift; sourceTree = "<group>"; };
@@ -126,9 +128,9 @@
 				98E02E982B9DDE2F003C3355 /* HomePage.swift */,
 				98E02E9A2B9DDE39003C3355 /* SignalsPage.swift */,
 				98E02E9C2B9DDE40003C3355 /* SettingsPage.swift */,
-				98E02E9E2B9DE431003C3355 /* PairsPage.swift */,
 				98E02EA02B9DE43B003C3355 /* LearnPage.swift */,
 				98E02EA92B9DEA2B003C3355 /* DetailedPair.swift */,
+				985D39072C29C9AF0006B823 /* StudyPage.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -161,6 +163,7 @@
 				98E02EA22B9DE4E6003C3355 /* PairsRow.swift */,
 				98E02EAB2B9DEE51003C3355 /* LearnRow.swift */,
 				9842C63E2BA486BF0099837B /* SignalRow.swift */,
+				985D39092C2D5B7B0006B823 /* MyAtt.swift */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -269,14 +272,15 @@
 				98E02EA12B9DE43B003C3355 /* LearnPage.swift in Sources */,
 				98E02E992B9DDE2F003C3355 /* HomePage.swift in Sources */,
 				98E02E942B9DCC22003C3355 /* OnBoarding5.swift in Sources */,
-				98E02E9F2B9DE431003C3355 /* PairsPage.swift in Sources */,
 				98E02EA62B9DE546003C3355 /* PairsModel.swift in Sources */,
 				98E02EAE2B9DEEA0003C3355 /* LearnModel.swift in Sources */,
 				98E02E752B9DCB08003C3355 /* QXguideApp.swift in Sources */,
 				98E02E8E2B9DCBEF003C3355 /* OnBoarding2.swift in Sources */,
+				985D39082C29C9AF0006B823 /* StudyPage.swift in Sources */,
 				98E02E852B9DCB7D003C3355 /* LoadingView.swift in Sources */,
 				9842C63D2BA47E5F0099837B /* TimerModel.swift in Sources */,
 				98E02EA32B9DE4E6003C3355 /* PairsRow.swift in Sources */,
+				985D390A2C2D5B7B0006B823 /* MyAtt.swift in Sources */,
 				9842C63F2BA486BF0099837B /* SignalRow.swift in Sources */,
 				98E02EAA2B9DEA2B003C3355 /* DetailedPair.swift in Sources */,
 			);

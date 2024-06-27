@@ -22,7 +22,7 @@ struct OnBoarding4: View {
             Text("Other users about us")
                 .font(.system(size: 16))
                 .fontWeight(.semibold)
-                .foregroundColor(Color(red: 180/255, green: 180/255, blue: 197/255))
+                .foregroundColor(Color(red: 190/255, green: 191/255, blue: 210/255))
             Spacer()
             Image("onb4")
                 .resizable()
@@ -42,7 +42,7 @@ struct OnBoarding4: View {
                     .frame(maxWidth: 343, maxHeight: 53)
                     .background{
                         RoundedRectangle(cornerRadius: 10)
-                            .fill(Color.init(red: 88/255, green: 121/255, blue: 236/255))
+                            .fill(Color.init(red: 0/255, green: 211/255, blue: 126/255))
                     }
             })
             .padding(.top, 20)
@@ -51,7 +51,7 @@ struct OnBoarding4: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(
-            LinearGradient(colors: [Color(red: 88/255, green: 121/255, blue: 236/255), Color(red: 22/255, green: 24/255, blue: 30/255)], startPoint: .top, endPoint: .bottom)
+            LinearGradient(colors: [Color(red: 0/255, green: 211/255, blue: 126/255), Color(red: 22/255, green: 24/255, blue: 30/255)], startPoint: .top, endPoint: .bottom).ignoresSafeArea()
         )
         .foregroundColor(.white)
         

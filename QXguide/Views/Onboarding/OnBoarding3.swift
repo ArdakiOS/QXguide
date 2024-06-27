@@ -47,7 +47,7 @@ struct OnBoarding3: View {
                     .frame(maxWidth: 343, maxHeight: 53)
                     .background{
                         RoundedRectangle(cornerRadius: 10)
-                            .fill(Color.init(red: 88/255, green: 121/255, blue: 236/255))
+                            .fill(Color.init(red: 0/255, green: 211/255, blue: 126/255))
                     }
             })
             .padding(.top, 20)
@@ -56,7 +56,7 @@ struct OnBoarding3: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(
-            LinearGradient(colors: [Color(red: 88/255, green: 121/255, blue: 236/255), Color(red: 22/255, green: 24/255, blue: 30/255)], startPoint: .top, endPoint: .bottom)
+            LinearGradient(colors: [Color(red: 0/255, green: 211/255, blue: 126/255), Color(red: 22/255, green: 24/255, blue: 30/255)], startPoint: .top, endPoint: .bottom).ignoresSafeArea()
         )
         .foregroundColor(.white)
         

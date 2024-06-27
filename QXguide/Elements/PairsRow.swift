@@ -27,7 +27,7 @@ struct PairsRow: View {
         .frame(width: 343, height: 64)
         .background(
             RoundedRectangle(cornerRadius: 16)
-                .fill(Color("TabRow"))
+                .fill(Color(red: 42/255, green: 56/255, blue: 63/255))
         )
     }
 }

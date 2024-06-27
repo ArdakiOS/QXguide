@@ -18,4 +18,5 @@ struct TimerModel : Hashable {
         return String(format: "%02d:%02d", minutes, seconds)
     }
     var buy : Bool
+    let endTime : String
 }

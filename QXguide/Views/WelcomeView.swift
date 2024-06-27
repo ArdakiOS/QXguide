@@ -13,7 +13,7 @@ struct WelcomeView: View {
         ZStack{
             NavView()
             if rot < 500{
-                //LoadingView(rot: $rot)
+                LoadingView(rot: $rot)
             }
         }
     }

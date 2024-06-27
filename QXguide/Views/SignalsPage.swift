@@ -7,27 +7,23 @@
 
 import SwiftUI
 
-struct SignalsPage: View {
-    @ObservedObject var sigVM : SignalsVM
+struct SignalsPage: View {    
+    @StateObject var sigVM : SignalsVM
     var body: some View {
         VStack(alignment: .leading, spacing: 75){
-            Text("Signals")
+            Text("Signals")                
                 .font(.system(size: 24))
                 .fontWeight(.bold)
-            
             VStack(alignment: .center){
                 Text("The next signal is via:")
-                Text(sigVM.signals.min(by: { $0.remainingTime < $1.remainingTime })?.remainingTimeString ?? "")
-                    .foregroundColor(Color("InactiveTab"))
+                Text(sigVM.signals.min(by: { $0.remainingTime > $1.remainingTime })?.remainingTimeString ?? "")                    .foregroundColor(Color("InactiveTab"))
             }
-            .font(.system(size: 24))
-            .fontWeight(.bold)
+            .font(.system(size: 24, weight: .bold))
             .frame(width: 343, height: 122)
-            .background(
+            .background(                
                 RoundedRectangle(cornerRadius: 16)
-                    .fill(Color("TabRow"))
+                    .fill(Color("TabRow"))   
             )
-            
             
             VStack(spacing: 25){
                 ForEach(sigVM.signals, id: \.self){row in
@@ -41,7 +37,7 @@ struct SignalsPage: View {
                                 .font(.system(size: 16))
                                 .fontWeight(.semibold)
                             Spacer()
-                            Text(row.remainingTimeString)
+                            Text(row.endTime)
                                 .font(.system(size: 14))
                             Spacer()
                             if row.buy {
@@ -64,11 +60,8 @@ struct SignalsPage: View {
                                         .foregroundColor(.red)
                                 }
                             }
-                            
                         }
                         .padding(.horizontal, 20)
-                        
-                        
                     }
                     .frame(width: 343, height: 60)
                     .background(
@@ -81,7 +74,6 @@ struct SignalsPage: View {
                                 RoundedRectangle(cornerRadius: 2)
                                     .fill(Color.green)
                                     .frame(height: 4)
-                                
                             }
                             else if Double(row.remainingTime/row.duration) > 0.33 {
                                 RoundedRectangle(cornerRadius: 2)
@@ -93,7 +85,6 @@ struct SignalsPage: View {
                                     .fill(Color.red)
                                     .frame(height: 4)
                             }
-                            
                             ZStack{
                                 if Double(row.remainingTime/row.duration) > 0.66 {
                                     Circle()
@@ -110,11 +101,9 @@ struct SignalsPage: View {
                                         .fill(Color.red)
                                         .frame(width: 16)
                                 }
-                                
                                 Circle()
                                     .fill(Color.white)
                                     .frame(width: 4)
-                                
                             }
                         }
                         .frame(width: 343 * CGFloat((row.remainingTime / row.duration)))
@@ -123,18 +112,8 @@ struct SignalsPage: View {
                     }
                 }
             }
-
-            
-            
             
             
         }
-
-        
         .foregroundColor(.white)
-    }
-}
-
-#Preview {
-    NavView(currentPage: .signals)
-}
+    }}
